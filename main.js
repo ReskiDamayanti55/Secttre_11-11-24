@@ -16,3 +16,24 @@ navLinks.addEventListener('click', () => {
 
 	menuBtnIcon.setAttribute('class', 'ri-menu-line');
 });
+
+// animation
+const scrollRevealOption = {
+	distance: '50px',
+	origin: 'bottom',
+	duration: 1000,
+};
+
+ScrollReveal().reveal('.header__container p', {
+	...scrollRevealOption,
+});
+
+ScrollReveal().reveal('.header__container h1', {
+	...scrollRevealOption,
+	delay: 500,
+});
+
+ScrollReveal().reveal('.header__container .header__flex', {
+	...scrollRevealOption,
+	delay: 1000,
+});
