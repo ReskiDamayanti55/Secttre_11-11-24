@@ -294,6 +294,19 @@ nav {
     cursor: pointer;
 }
 
+.faq__card.active .faq__header span {
+    transform: rotate(180deg);
+}
+
+.faq__description {
+    color: var(--text-light);
+    display: none;
+}
+
+.faq__card.active .faq__description {
+    display: block;
+}
+
 
 
 @media (width > 768px) {
@@ -361,5 +374,9 @@ nav {
 
     .about__card {
         padding: 5rem 2rem;
+    }
+
+    .faq__container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
