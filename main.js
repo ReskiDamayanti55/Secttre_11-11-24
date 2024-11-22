@@ -60,3 +60,18 @@ ScrollReveal().reveal('.faq__image img', {
 	...scrollRevealOption,
 	origin: 'left',
 });
+
+ScrollReveal().reveal('.article__card', {
+	...scrollRevealOption,
+	interval: 500,
+});
+
+const swiper = new Swiper('.swiper', {
+	// Optional parameters
+	loop: true,
+
+	// If we need pagination
+	pagination: {
+		el: '.swiper-pagination',
+	},
+});
